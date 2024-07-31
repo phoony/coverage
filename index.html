@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="pico.purple.min.css">
+    <link rel="stylesheet" href="extra.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1>A Study on Test Coverage of API Contracts</h1>
+    </header>
+
+    <hr>
+
+    <main class="container">
+        <section>
+            <h2>
+                <a href="#short" class=" secondary" style="text-decoration: none;">/</a> Short Explanation
+            </h2>
+            <h3>Have you ever wondered about your API Coverage?</h3>
+            <h4>Join <a href="https://forms.gle/NFNV3LrapKocKKvR9">the
+                    survey</a> and contribute to the development of an advanced API testing tool. Your feedback is
+                invaluable!</h4>
+            <p>
+                Help us shape the future of API testing tools! We are conducting a survey to gather insights from
+                developers like <b>you</b> to create a prototype tool that reports on the test coverage of your API
+                based on
+                your test suite.
+            </p>
+
+            <h3>The Goal: Usable data about the quality of your test suite!</h3>
+            <div class="grid">
+                <img src="4.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                <img src="5.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                <a href="#explanation" class="secondary" style="text-decoration: none;">/</a> Longer Explanation
+            </h2>
+
+            <section>
+                <h3>What is an API Contract?</h3>
+                <div class="grid">
+                    <div>
+                        <img src="1.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                    </div>
+                    <div>
+                        <p>An API contract, such as <a href="https://www.openapis.org/">OpenAPI</a> outlines the
+                            structure and behavior of APIs. It specifies the available <b>operations</b>, their
+                            <b>locations</b>, and
+                            the required <b>parameters</b>. When properly defined, it allows consumers to understand and
+                            interact with a remote service without needing to know its internal workings. These
+                            descriptions can automatically generate documentation and server or client stubs.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>What is API Testing?</h3>
+                <div class="grid">
+                    <div>
+                        <img src="2.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                    </div>
+                    <div>
+                        <p>Often APIs come with their own <b>test suite</b> which focuses on testing the APIs behavior.
+                            The
+                            developers could for example write a simple test client that calls certain API functions via
+                            HTTP and verifies that the server responds as expected. This is mostly testing the domain
+                            logic but can also test different behaviors such as error handling or performance.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>The goal</h3>
+                <div class="grid">
+                    <div>
+                        <img src="3.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                    </div>
+                    <div>
+                        <p>
+                            The execution of the API tests generates valuable traffic data. The traffic contains
+                            information about which endpoints are called, with which parameters and how often. This data
+                            can be used to generate statistics that show how thoroughly the API is tested. <b>The best
+                                thing is: this is completely language agnostic </b> since it only relies on the raw HTTP
+                            traffic. The goal of this work is to <b> create a tool </b> that does exactly that: <b>
+                                analyze
+                                the traffic data and <b>generate a report that shows how well the API is covered</b>.
+                                You can help by participating in <a href="https://forms.gle/NFNV3LrapKocKKvR9">the
+                                    survey</a> mentioned above.
+
+                            </b>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>What is API Coverage?</h3>
+                <div class="grid">
+                    <div>
+                        <img src="4.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                    </div>
+                    <div>
+                        <p><b>API Coverage is a collection of metrics that measures the degree to which an API is
+                                tested</b>. These metrics can vary depending on their definition and purpose. The
+                            important
+                            thing is that they give an idea of how well the API is tested and where the gaps are. The
+                            goal
+                            is that the generated coverage data can be used to help developers improve their test suite.
+                        </p>
+
+                        <p>
+                            <b>A desirable outcome</b> would be to find a positive correlation between API Test Coverage
+                            and the
+                            robustness
+                            of the API. Equally desirable would be a correlation between API Test Coverage and found
+                            bugs in the API implementation. This could be used to predict the quality of the API based
+                            on the test coverage.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>API Coverage Report</h3>
+                <div class="grid">
+                    <div>
+                        <img src="5.svg" width="95%" style="border: 0.1rem, white solid; padding: 20px;">
+                    </div>
+                    <div>
+                        <p>Measuring API coverage not only as a percentage but also providing insights into areas
+                            needing improvement is beneficial. A <b>graphical representation</b> can offer a quick
+                            overview of individual metrics and other relevant information, showing developers on where
+                            they should focus their efforts in the test suite.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Example Metrics</h3>
+                <p>Note: Most of these metrics are taken directly from or inspired by the article <a href="https://doi.org/10.1145/3340433.3342822
+                    ">Test coverage criteria for RESTful web APIs</a> by Alberto Martin-Lopez, Sergio Segura, Antonio
+                    Ruiz-Cortés</p>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Metric Name</th>
+                            <th scope="col">Short Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Path Coverage</th>
+                            <td>
+                                <p>Every OpenAPI document defines a set of paths. How many of these paths are we
+                                    testing?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Operation Coverage</th>
+                            <td>
+                                <p>Paths offer multiple operations which are accessed via the corresponding HTTP-Method
+                                    (GET, POST, ...). Which operations are being tested?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Parameter Coverage</th>
+                            <td>
+                                <p>Operations can accept parameters. Are all of these Parameters used?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Parameter Value Coverage</th>
+                            <td>
+                                <p>Which values are being passed as parameters?</p>
+                                <ul>
+                                    <li> Are we testing with valid values?</li>
+                                    <li> Are we testing with multiple different values?</li>
+                                    <li> Are we testing edge cases?</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Operation Flow Coverage</th>
+                            <td>
+                                <p>We can define specific sequences of operations that we name operation flows. Which of
+                                    these operation flows are tested? Which are desirable to cover?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Satus Code Coverage</th>
+                            <td>
+                                <p>Can we observe all the possible status codes returned by operations?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Body Property Coverage</th>
+                            <td>
+                                <p>Responses are mostly encoded in JSON. They can also be defined in the API Contract.
+                                    Can we observer all possible properties of the response objects?</p>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+        </section>
+    </main>
+
+    <hr>
+
+
+    <footer class="container">
+        <p>&copy; 2024 Jan-Hendrik Eriksen, <a href="https://www.uni-hannover.de/de/">Leibniz Universität Hannover</a>
+        </p>
+        <p>Contact me via: <a><span class="email">eriksen@stud.uni-hannover<b>.example</b>.de</span></a></p>
+    </footer>
+
+</body>
+
+</html>

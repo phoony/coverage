@@ -1,0 +1,31 @@
+section {
+    margin-bottom: 2em;
+}
+
+h1,
+h2,
+h3 {
+    --pico-color: var(--pico-primary);
+    --pico-background-color: transparent;
+    background-color: var(--pico-background-color);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+span.email b {
+    display: none;
+}
